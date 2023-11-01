@@ -6,7 +6,7 @@ index.js:16
 resave doit prendre une valeur de "true" dans le cas ou la session n'implémente pas la fonction "touch", ce qui est le cas ici.
 
 router.js:13
-Express est un framework que l'on peut imaginer comme une suite de middleware. Il existe des middleware que l'on va appliquer sur le router, comme un middleware d'authentification qui va autoriser ou refuser l'accès à des routes. Hors ici il s'agit de gérer un objet en session, et cela doit se faire au niveau de l'application, et non du router.
+Express est un framework que l'on peut imaginer comme une suite de middleware. Il existe des middleware que l'on va appliquer sur le router, comme un middleware d'authentification qui va autoriser ou refuser l'accès à des routes. Hors ici il s'agit de gérer un objet en session, et cela doit se faire au niveau de l'application (app.use), et non du router.
 
 Attention au nomage des fichiers, ici card-item.ejs ne respecte pas les conventions de nommage, ici cela devrait s'écrire en camelCase, donc cardItem.ejs
 
